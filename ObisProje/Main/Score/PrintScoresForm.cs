@@ -21,7 +21,7 @@ namespace ObisProjem.Score
 
         private void PrintScoresForm_Load(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT course_label FROM Course_Table", sql);//database e veriler çekiliyor.
             DataTable dataTable = new DataTable();//course
@@ -43,7 +43,7 @@ namespace ObisProjem.Score
 
         private void listBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            studentListData.Rows.Clear(); SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+            studentListData.Rows.Clear(); SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT Student_Table.student_id , Student_Table.student_firstname , Student_Table.student_lastname , Course_Table.course_id , Score_Table.score_course , Score_Table.score FROM Student_Table,Course_Table,Score_Table where Student_Table.student_id=Score_Table.student_id And Score_Table.score_course=Course_Table.course_label", sql);//database e veriler çekiliyor.
             DataTable dataTable = new DataTable();
@@ -63,7 +63,7 @@ namespace ObisProjem.Score
 
         private void dataGridView2_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            studentListData.Rows.Clear(); SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+            studentListData.Rows.Clear(); SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT Student_Table.student_id , Student_Table.student_firstname , Student_Table.student_lastname , Course_Table.course_id , Score_Table.score_course , Score_Table.score FROM Student_Table,Course_Table,Score_Table where Student_Table.student_id=Score_Table.student_id And Score_Table.score_course=Course_Table.course_label", sql);//database e veriler çekiliyor.
             DataTable dataTable = new DataTable();
@@ -84,7 +84,7 @@ namespace ObisProjem.Score
         {
 
             studentListData.Rows.Clear();
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT Student_Table.student_id , Student_Table.student_firstname , Student_Table.student_lastname , Course_Table.course_id , Score_Table.score_course , Score_Table.score FROM Student_Table,Course_Table,Score_Table where Student_Table.student_id=Score_Table.student_id And Score_Table.score_course=Course_Table.course_label", sql);//database e veriler çekiliyor.
             DataTable dataTable = new DataTable();
@@ -132,7 +132,7 @@ namespace ObisProjem.Score
         {
 
             studentListData.Rows.Clear();
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT Student_Table.student_id , Student_Table.student_firstname , Student_Table.student_lastname , Course_Table.course_id , Score_Table.score_course , Score_Table.score FROM Student_Table,Course_Table,Score_Table where Student_Table.student_id=Score_Table.student_id And Score_Table.score_course=Course_Table.course_label", sql);//database e veriler çekiliyor.
             DataTable dataTable = new DataTable();

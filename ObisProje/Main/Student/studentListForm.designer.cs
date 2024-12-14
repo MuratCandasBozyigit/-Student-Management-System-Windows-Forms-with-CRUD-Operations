@@ -59,6 +59,7 @@
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 100;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // RefreshButton

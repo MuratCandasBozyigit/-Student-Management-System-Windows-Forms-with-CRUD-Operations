@@ -20,7 +20,7 @@ namespace ObisProjem.Course
 
         private void ManageCoursesForm_Load(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlCommand sqlCommand = new SqlCommand("DELETE from Course_Table where course_id=@course_id", sql);
             SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Course_Table", sql);
@@ -41,7 +41,7 @@ namespace ObisProjem.Course
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Course_Table", sql);
 
@@ -74,7 +74,7 @@ namespace ObisProjem.Course
             }
 
             // SQL bağlantısını oluşturuyoruz.
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             // Kullanıcıdan gelen verileri ekliyoruz.
             SqlCommand command = new SqlCommand(
@@ -118,7 +118,7 @@ namespace ObisProjem.Course
             }
 
             // SQL bağlantısını oluşturuyoruz.
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             try
             {
@@ -201,7 +201,7 @@ namespace ObisProjem.Course
             DialogResult result1 = MessageBox.Show("Are you sure?", "Warning!", MessageBoxButtons.YesNo);
             if (result1 == DialogResult.Yes)
             {
-                SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+              SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
                 SqlCommand sqlCommand = new SqlCommand("DELETE from Course_Table where course_id=@Course_id", sql);
                 sql.Open();

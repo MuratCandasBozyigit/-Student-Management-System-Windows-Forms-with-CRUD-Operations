@@ -48,6 +48,7 @@
             this.TotalStudentLabel.TabIndex = 44;
             this.TotalStudentLabel.Text = "Toplam Öğrenciler:";
             this.TotalStudentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TotalStudentLabel.Click += new System.EventHandler(this.TotalStudentLabel_Click);
             this.TotalStudentLabel.MouseLeave += new System.EventHandler(this.TotalStudentLabel_MouseLeave);
             this.TotalStudentLabel.MouseHover += new System.EventHandler(this.TotalStudentLabel_MouseHover);
             // 

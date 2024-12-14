@@ -26,7 +26,7 @@ namespace ObisProjem.Score
 
         private void ManageScoresForm_Load(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Course_Table", sql);//database e veriler çekiliyor.
             DataTable dataTable = new DataTable();
@@ -44,7 +44,7 @@ namespace ObisProjem.Score
         {
             if (button == "score")
             {
-                SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+              SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
                 SqlCommand sqlCommand = new SqlCommand("DELETE from Score_Table WHERE student_id=@student_id AND score_course=@score_course", sql);
                 sql.Open();
@@ -71,7 +71,7 @@ namespace ObisProjem.Score
                 return; // İşlemi durdur
             }
 
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             bool readerHasRows = false; // <-- Initialize bool here for later use
 
@@ -120,7 +120,7 @@ namespace ObisProjem.Score
 
         private void UpdateAverageScore(int studentId, string scoreCourse)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             // Notları al
             string query = "SELECT score, score1 FROM Score_Table WHERE student_id = @student_id AND score_course = @score_course";
@@ -181,7 +181,7 @@ namespace ObisProjem.Score
         private void button2_Click(object sender, EventArgs e)
         {
             button = "score";
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT Student_Table.student_id , Student_Table.student_firstname , Student_Table.student_lastname , Course_Table.course_id , Score_Table.score_course ,Score_Table.score1, Score_Table.score FROM Student_Table,Course_Table,Score_Table where Student_Table.student_id=Score_Table.student_id And Score_Table.score_course=Course_Table.course_label", sql);//database e veriler çekiliyor.
             DataTable dataTable = new DataTable();
@@ -194,7 +194,7 @@ namespace ObisProjem.Score
         private void button1_Click(object sender, EventArgs e)
         {
             button = "student";
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT student_id , student_firstname , student_lastname , student_birthdate FROM Student_Table", sql);//database e veriler çekiliyor.
           

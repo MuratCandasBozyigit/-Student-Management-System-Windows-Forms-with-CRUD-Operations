@@ -21,7 +21,7 @@ namespace ObisProjem
 
         private void RefreshButton_Click(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             sql.Open();
             SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Student_Table", sql);//database e veriler çekiliyor.
@@ -41,7 +41,7 @@ namespace ObisProjem
 
         private void studentListForm_Load_1(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             sql.Open();
             SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Student_Table", sql);//database e veriler çekiliyor.
@@ -64,7 +64,7 @@ namespace ObisProjem
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             UpdateDeleteStudentForm a = new UpdateDeleteStudentForm();
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             sql.Open();
             SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Student_Table", sql);//database e veriler çekiliyor.
@@ -93,6 +93,11 @@ namespace ObisProjem
             a.id.Text = dataTable.Rows[e.RowIndex][0].ToString();
             a.button2_Click(sender, e);
             a.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -21,7 +21,7 @@ namespace ObisProjem.Course
 
         private void PrintCourseForm_Load(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             sql.Open();
             SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Course_Table", sql);//database e veriler çekiliyor.
@@ -64,6 +64,9 @@ namespace ObisProjem.Course
             MessageBox.Show("Data Exported");
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }

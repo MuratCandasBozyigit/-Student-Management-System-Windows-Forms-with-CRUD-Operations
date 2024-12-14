@@ -14,7 +14,7 @@ namespace ObisProjem.Score
 
         private void AvgScoreByCourse_Load(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             // Dersleri çekme
             SqlDataAdapter da = new SqlDataAdapter("SELECT course_label FROM Course_Table", sql);

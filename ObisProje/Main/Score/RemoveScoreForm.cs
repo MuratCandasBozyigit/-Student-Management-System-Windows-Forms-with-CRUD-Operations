@@ -20,7 +20,7 @@ namespace ObisProjem.Score
 
         private void RemoveScoreForm_Load(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlDataAdapter da1 = new SqlDataAdapter(
      "SELECT Student_Table.student_id, " +
@@ -56,7 +56,7 @@ namespace ObisProjem.Score
 
             int rowindex = studentListData.SelectedRows[0].Index; // Seçilen satırın indexini alıyoruz
 
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             SqlCommand sqlCommand = new SqlCommand("DELETE from Score_Table WHERE student_id=@student_id AND score_course=@score_course", sql);
             sql.Open();

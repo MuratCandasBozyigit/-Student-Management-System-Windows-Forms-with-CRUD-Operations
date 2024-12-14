@@ -26,7 +26,7 @@ namespace ObisProjem
 
         private void baglan()
         {
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;"); // Yeni connection string
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;"); // Yeni connection string
             sql.Open();
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Student_Table", sql); // Veriler çekiliyor.
             da.Fill(dataTable);
@@ -128,7 +128,7 @@ namespace ObisProjem
         //            gender = "Male";                  //Cinsiyeti kontrol ediyor gender değişkenine atıyor.
         //        if (radioButtonFemale.Checked == true)//
         //            gender = "Female";                //
-        //        SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+        //      SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
 
         //        byte[] images = null;
@@ -188,7 +188,7 @@ namespace ObisProjem
             picturePanel.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
             images = ms.ToArray();
 
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             sql.Open();
             SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Student_Table", sql);//database e veriler çekiliyor.  
@@ -219,7 +219,7 @@ namespace ObisProjem
             DialogResult result1 = MessageBox.Show("Eminmisin?", "DİKKAT!", MessageBoxButtons.YesNo);
             if (result1 == DialogResult.Yes)
             {
-                SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+              SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
                 SqlDataAdapter da = new SqlDataAdapter("SELECT *FROM Student_Table", sql);//database e veriler çekiliyor.  
                 SqlCommand sqlCommand = new SqlCommand("DELETE from Student_Table where student_id=@sil", sql);

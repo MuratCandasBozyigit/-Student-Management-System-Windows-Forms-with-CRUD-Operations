@@ -8,7 +8,7 @@ namespace ObisProje
 {
     static class Program
     {
-        private static readonly string ConnectionString = "Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;";
+        private static readonly string ConnectionString = "Server=.\\MSSQLSERVER2019;Database=-;User Id=;Password=;TrustServerCertificate=True;";
 
         /// <summary>
         /// Uygulamanın ana girdi noktası.

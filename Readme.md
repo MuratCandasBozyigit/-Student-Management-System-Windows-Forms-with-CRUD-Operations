@@ -1,43 +1,23 @@
-Hocam aşagıda uygulamaya ait kendi hostumdaki veritaban'ı ilgisi ve login olurken gireceğiniz bilgiler yazıyor Teşekkür ederim şimfiden kolay gelsin sizlere.
+This repository contains a Windows Forms application designed for managing student records with full CRUD (Create, Read, Update, Delete) functionality. The application uses SQL Server as the database and follows the Code-First approach in Entity Framework for database operations.
 
+"""""""""""""""""""" Login Credentials: admin / admin """""""""""""""""""" 
 
-""""""""""""""""""""
-Login Bilgileri: admin / admin
-SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
-""""""""""""""""""""
+///English/// Student Information System Project This project is a student information management application developed using C# and SQL Server. It is designed to manage student information, courses, and grades. Below, you will find a detailed explanation of the application's key features and functionalities.
 
-Öğrenci Bilgi Sistemi Projesi
-Bu proje, C# ve SQL Server kullanılarak geliştirilmiş bir öğrenci bilgi sistemi uygulamasıdır. Proje, öğrenci bilgilerini, dersleri ve notları yönetmeyi amaçlar. Aşağıda, uygulamanın temel özelliklerini ve işleyişini detaylı bir şekilde bulabilirsiniz.
+Login Screen When the application starts, the user is prompted to enter a Username and Password. If incorrect credentials are entered, a warning message is displayed. Upon successful login, the user is redirected to the main menu.
 
-Giriş Ekranı
-Uygulama başlatıldığında kullanıcıdan Kullanıcı Adı ve Şifre istenmektedir. Eğer yanlış giriş yapılırsa, kullanıcıya bir uyarı mesajı gösterilir. Doğru bilgilerle giriş yapıldığında ana menüye yönlendirilirsiniz.
+Main Menu The main menu contains the following sections:
 
-Ana Menü
-Ana menüde şu başlıklar bulunmaktadır:
+Student Management Course Management Grade Management Student Management Add Student: Students can be added by entering all required information. If any information is missing, an error message is displayed. Student List: All students are listed, and the list can be refreshed using the Update button. Edit and Delete Students: By double-clicking on a student's information, you can edit or delete the record. You can also view gender-based ratios for students. Search by ID: Quickly find a student’s information by entering their ID. If an invalid ID is entered, a "Not Found" error is displayed. Course Management Add Course: New courses can be added to the database by providing details like course name and duration. Delete Course: Courses can be deleted by entering their ID. Edit Course: Existing courses can be selected from the list and edited. Navigate Courses: Use navigation buttons to move between courses. Grade Management Add Grade: Grades can be assigned to a selected student for a specific course. A student can only receive two grades per course. Attempting to assign more than two grades for the same course results in an error. Delete Grade: Course grades can be deleted using the Remove button. Course Average Grade: Calculate and display the average grade for each course. Student Grades: View all courses and grades for a specific student. Database Usage This project utilizes SQL Server for the database backend, and database operations are handled using ADO.NET. The application performs database operations on Windows Forms, making effective use of the technology for managing data.
 
-Öğrenci Yönetimi
-Ders Yönetimi
-Not Yönetimi
-Öğrenci Yönetimi
-Öğrenci Ekleme: Öğrenci bilgileri eksiksiz bir şekilde girilmelidir. Eksik bilgiyle öğrenci eklenmeye çalışıldığında bir hata mesajı görüntülenir.
-Öğrenci Listesi: Tüm öğrenciler listelenir ve listeyi güncellemek için "Güncelle" butonuna tıklanabilir.
-Öğrenci Düzenleme ve Silme: Öğrencinin bilgilerine çift tıklayarak düzenleme yapabilir veya öğrenciyi silebilirsiniz. Ayrıca, öğrencinin cinsiyetine göre oranları görüntüleyebilirsiniz.
-ID ile Öğrenci Arama: Öğrenci ID'si girilerek öğrenci bilgilerine hızlıca ulaşılabilir. Geçersiz ID girildiğinde "Bulunamadı" hatası alınır.
-Ders Yönetimi
-Ders Ekleme: Ders adı, saat bilgisi ve diğer ders bilgileri girilerek veri tabanına yeni bir ders eklenebilir.
-Ders Silme: Ders ID'si girilerek ders silinebilir.
-Ders Düzenleme: Mevcut dersler listeden seçilerek düzenlenebilir.
-Ders Geçişi: Dersler arasında geçiş yapmak için yön butonları kullanılabilir.
-Not Yönetimi
-Not Ekleme: Seçilen öğrenciye seçilen dersten not eklenebilir. Aynı öğrenci, aynı dersi birden fazla alabilir ancak her dersten yalnızca iki not alabilir. Aynı öğrenciye aynı dersi birden fazla kez vermek mümkün değildir ve bu durumda hata mesajı gösterilir.
-Not Silme: Ders notları, "Kaldır" butonuyla silinebilir.
-Dersin Ortalama Notu: Her dersin ortalama notu hesaplanabilir ve görüntülenebilir.
-Öğrenci Notları: Öğrencilerin aldığı tüm dersler ve notları görüntülenebilir.
-Veri Tabanı Kullanımı
-Bu projede SQL Server veritabanı kullanılmıştır ve ADO.NET ile veri tabanı bağlantıları yapılmıştır. Windows Forms üzerinde veri tabanı işlemleri gerçekleştirilerek, bu teknolojiyi daha verimli bir şekilde kullanmaya çalıştım.
+Development and Technologies Used Language: C# Database: SQL Server Technology: ADO.NET, Windows Forms Database Relationships: Relationships between students, courses, and grades are properly modeled to ensure data integrity.
 
-Geliştirme Konuları ve Kullanılan Teknolojiler:
-Dil: C#
-Veritabanı: SQL Server
-Teknoloji: ADO.NET, Windows Forms
-Veritabanı İlişkileri: Öğrenciler, dersler ve notlar arasındaki ilişkiler doğru şekilde modellenmiştir.
+//////TR////// Öğrenci Bilgi Sistemi Projesi Bu proje, C# ve SQL Server kullanılarak geliştirilmiş bir öğrenci bilgi sistemi uygulamasıdır. Proje, öğrenci bilgilerini, dersleri ve notları yönetmeyi amaçlar. Aşağıda, uygulamanın temel özelliklerini ve işleyişini detaylı bir şekilde bulabilirsiniz.
+
+Giriş Ekranı Uygulama başlatıldığında kullanıcıdan Kullanıcı Adı ve Şifre istenmektedir. Eğer yanlış giriş yapılırsa, kullanıcıya bir uyarı mesajı gösterilir. Doğru bilgilerle giriş yapıldığında ana menüye yönlendirilirsiniz.
+
+Ana Menü Ana menüde şu başlıklar bulunmaktadır:
+
+Öğrenci Yönetimi Ders Yönetimi Not Yönetimi Öğrenci Yönetimi Öğrenci Ekleme: Öğrenci bilgileri eksiksiz bir şekilde girilmelidir. Eksik bilgiyle öğrenci eklenmeye çalışıldığında bir hata mesajı görüntülenir. Öğrenci Listesi: Tüm öğrenciler listelenir ve listeyi güncellemek için "Güncelle" butonuna tıklanabilir. Öğrenci Düzenleme ve Silme: Öğrencinin bilgilerine çift tıklayarak düzenleme yapabilir veya öğrenciyi silebilirsiniz. Ayrıca, öğrencinin cinsiyetine göre oranları görüntüleyebilirsiniz. ID ile Öğrenci Arama: Öğrenci ID'si girilerek öğrenci bilgilerine hızlıca ulaşılabilir. Geçersiz ID girildiğinde "Bulunamadı" hatası alınır. Ders Yönetimi Ders Ekleme: Ders adı, saat bilgisi ve diğer ders bilgileri girilerek veri tabanına yeni bir ders eklenebilir. Ders Silme: Ders ID'si girilerek ders silinebilir. Ders Düzenleme: Mevcut dersler listeden seçilerek düzenlenebilir. Ders Geçişi: Dersler arasında geçiş yapmak için yön butonları kullanılabilir. Not Yönetimi Not Ekleme: Seçilen öğrenciye seçilen dersten not eklenebilir. Aynı öğrenci, aynı dersi birden fazla alabilir ancak her dersten yalnızca iki not alabilir. Aynı öğrenciye aynı dersi birden fazla kez vermek mümkün değildir ve bu durumda hata mesajı gösterilir. Not Silme: Ders notları, "Kaldır" butonuyla silinebilir. Dersin Ortalama Notu: Her dersin ortalama notu hesaplanabilir ve görüntülenebilir. Öğrenci Notları: Öğrencilerin aldığı tüm dersler ve notları görüntülenebilir. Veri Tabanı Kullanımı Bu projede SQL Server veritabanı kullanılmıştır ve ADO.NET ile veri tabanı bağlantıları yapılmıştır. Windows Forms üzerinde veri tabanı işlemleri gerçekleştirilerek, bu teknolojiyi daha verimli bir şekilde kullanmaya çalıştım.
+
+Geliştirme Konuları ve Kullanılan Teknolojiler: Dil: C# Veritabanı: SQL Server Teknoloji: ADO.NET, Windows Forms Veritabanı İlişkileri: Öğrenciler, dersler ve notlar arasındaki ilişkiler doğru şekilde modellenmiştir.

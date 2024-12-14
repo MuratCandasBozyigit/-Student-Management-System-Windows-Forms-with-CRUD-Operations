@@ -18,7 +18,7 @@ namespace ObisProjem.Score
         {
             // Dersleri ComboBox2'ye ekle
             comboBox2.Items.Clear();
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             // Course_Table'dan verileri çek
             DataTable dataTable = new DataTable();
@@ -66,7 +66,7 @@ namespace ObisProjem.Score
                 return;
             }
 
-            SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
             // Öğrenci numarasını kontrol et
             if (!int.TryParse(textBox2.Text, out int studentId))
@@ -125,6 +125,11 @@ namespace ObisProjem.Score
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Sınav türü seçildiğinde yapılacak bir işlem varsa buraya eklenebilir.
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

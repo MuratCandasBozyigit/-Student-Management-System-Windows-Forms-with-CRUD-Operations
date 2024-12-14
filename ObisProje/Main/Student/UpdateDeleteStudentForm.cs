@@ -14,7 +14,7 @@ namespace ObisProjem
 {
     public partial class UpdateDeleteStudentForm : Form
     {
-        private DataTable dataTable = new DataTable(); SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+        private DataTable dataTable = new DataTable(); SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
         string imgLoc = "";
 
