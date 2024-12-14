@@ -1,11 +1,49 @@
-Hocam aşagıda uygulamaya ait kendi hostumdaki veritaban'ı ilgisi ve login olurken gireceğiniz bilgiler yazıyor Teşekkür ederim şimfiden kolay gelsin sizlere.
 
 
 """"""""""""""""""""
-Login Bilgileri: admin / admin
-SqlConnection sql = new SqlConnection("Server=217.195.207.215\\MSSQLSERVER2019;Database=dunyani1_obs;User Id=obs;Password=2013061Murat;TrustServerCertificate=True;");
+Login Credentials: admin / admin
 """"""""""""""""""""
+///English///
+Student Information System Project
+This project is a student information management application developed using C# and SQL Server. It is designed to manage student information, courses, and grades. Below, you will find a detailed explanation of the application's key features and functionalities.
 
+Login Screen
+When the application starts, the user is prompted to enter a Username and Password. If incorrect credentials are entered, a warning message is displayed. Upon successful login, the user is redirected to the main menu.
+
+Main Menu
+The main menu contains the following sections:
+
+Student Management
+Course Management
+Grade Management
+Student Management
+Add Student: Students can be added by entering all required information. If any information is missing, an error message is displayed.
+Student List: All students are listed, and the list can be refreshed using the Update button.
+Edit and Delete Students: By double-clicking on a student's information, you can edit or delete the record. You can also view gender-based ratios for students.
+Search by ID: Quickly find a student’s information by entering their ID. If an invalid ID is entered, a "Not Found" error is displayed.
+Course Management
+Add Course: New courses can be added to the database by providing details like course name and duration.
+Delete Course: Courses can be deleted by entering their ID.
+Edit Course: Existing courses can be selected from the list and edited.
+Navigate Courses: Use navigation buttons to move between courses.
+Grade Management
+Add Grade: Grades can be assigned to a selected student for a specific course. A student can only receive two grades per course. Attempting to assign more than two grades for the same course results in an error.
+Delete Grade: Course grades can be deleted using the Remove button.
+Course Average Grade: Calculate and display the average grade for each course.
+Student Grades: View all courses and grades for a specific student.
+Database Usage
+This project utilizes SQL Server for the database backend, and database operations are handled using ADO.NET. The application performs database operations on Windows Forms, making effective use of the technology for managing data.
+
+Development and Technologies Used
+Language: C#
+Database: SQL Server
+Technology: ADO.NET, Windows Forms
+Database Relationships: Relationships between students, courses, and grades are properly modeled to ensure data integrity.
+
+
+
+
+///TR///
 Öğrenci Bilgi Sistemi Projesi
 Bu proje, C# ve SQL Server kullanılarak geliştirilmiş bir öğrenci bilgi sistemi uygulamasıdır. Proje, öğrenci bilgilerini, dersleri ve notları yönetmeyi amaçlar. Aşağıda, uygulamanın temel özelliklerini ve işleyişini detaylı bir şekilde bulabilirsiniz.
 
