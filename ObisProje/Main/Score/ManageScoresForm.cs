@@ -60,20 +60,31 @@ namespace ObisProjem.Score
 
         private void AddScore_Click(object sender, EventArgs e)
         {
-            // Boş alan kontrolü
-            if (string.IsNullOrWhiteSpace(comboBox2.Text) ||
-                string.IsNullOrWhiteSpace(textBox2.Text) ||
-                string.IsNullOrWhiteSpace(textBox3.Text) ||
-                string.IsNullOrWhiteSpace(textBox1.Text) ||
-                string.IsNullOrWhiteSpace(richTextBox1.Text))
+            // Boş alan kontrolü için liste
+            List<string> emptyFields = new List<string>();
+
+            if (string.IsNullOrWhiteSpace(comboBox2.Text))
+                emptyFields.Add("Ders Adı");
+            if (string.IsNullOrWhiteSpace(textBox2.Text))
+                emptyFields.Add("Öğrenci ID");
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+                emptyFields.Add("Not 1");
+            if (string.IsNullOrWhiteSpace(textBox3.Text))
+                emptyFields.Add("Not 2");
+            if (string.IsNullOrWhiteSpace(richTextBox1.Text))
+                emptyFields.Add("Açıklama");
+
+            // Eğer tüm alanlar boşsa işlemi durdur
+            if (emptyFields.Count == 5)
             {
                 MessageBox.Show("Lütfen tüm alanları doldurun!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // İşlemi durdur
+                return;
             }
 
-          SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
+            // Veritabanı bağlantısı
+            SqlConnection sql = new SqlConnection("Server=.\\MSSQLSERVER2019;Database=master;User Id=;Password=;TrustServerCertificate=True;");
 
-            bool readerHasRows = false; // <-- Initialize bool here for later use
+            bool readerHasRows = false;
 
             string commandQuery = "SELECT score_course, student_id FROM Score_Table WHERE score_course = @score_course AND student_id = @student_id";
             using (SqlCommand cmd = new SqlCommand(commandQuery, sql))
@@ -100,12 +111,22 @@ namespace ObisProjem.Score
                 sql.Open();
                 command.Parameters.AddWithValue("@student_id", int.Parse(textBox2.Text));
                 command.Parameters.AddWithValue("@score_course", comboBox2.Text);
-                command.Parameters.AddWithValue("@score", textBox1.Text);
-                command.Parameters.AddWithValue("@score1", textBox3.Text);
-                command.Parameters.AddWithValue("@score_desc", richTextBox1.Text);
+                command.Parameters.AddWithValue("@score", string.IsNullOrWhiteSpace(textBox1.Text) ? (object)DBNull.Value : textBox1.Text);
+                command.Parameters.AddWithValue("@score1", string.IsNullOrWhiteSpace(textBox3.Text) ? (object)DBNull.Value : textBox3.Text);
+                command.Parameters.AddWithValue("@score_desc", string.IsNullOrWhiteSpace(richTextBox1.Text) ? (object)DBNull.Value : richTextBox1.Text);
                 command.ExecuteNonQuery();
                 sql.Close();
-                MessageBox.Show("Yeni Not Eklendi");
+
+                // Uyarı mesajı: Hangi alanlar boş bırakıldı?
+                if (emptyFields.Count > 0)
+                {
+                    string emptyFieldMessage = string.Join(", ", emptyFields);
+                    MessageBox.Show($"Bazı alanlar boş bırakıldı: {emptyFieldMessage}. Ancak bilgiler başarıyla eklendi!", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Yeni Not Eklendi", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
 
                 // Ortalama notu hesapla ve güncelle
                 UpdateAverageScore(int.Parse(textBox2.Text), comboBox2.Text);
@@ -114,6 +135,7 @@ namespace ObisProjem.Score
             // Formu temizle
             textBox2.Clear();
             textBox1.Clear();
+            textBox3.Clear();
             comboBox2.Text = "";
             richTextBox1.Clear();
         }
@@ -243,6 +265,11 @@ namespace ObisProjem.Score
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
