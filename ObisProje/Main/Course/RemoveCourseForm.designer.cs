@@ -39,9 +39,9 @@
             this.LabelAddCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelAddCourse.Location = new System.Drawing.Point(22, 36);
             this.LabelAddCourse.Name = "LabelAddCourse";
-            this.LabelAddCourse.Size = new System.Drawing.Size(131, 16);
+            this.LabelAddCourse.Size = new System.Drawing.Size(79, 16);
             this.LabelAddCourse.TabIndex = 1;
-            this.LabelAddCourse.Text = "Silinecek Ders ID:";
+            this.LabelAddCourse.Text = "Course ID:";
             // 
             // EditButton
             // 
@@ -53,7 +53,7 @@
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(130, 28);
             this.EditButton.TabIndex = 27;
-            this.EditButton.Text = "Kaldır";
+            this.EditButton.Text = "Remove";
             this.EditButton.UseVisualStyleBackColor = false;
             this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
@@ -80,7 +80,7 @@
             this.MinimizeBox = false;
             this.Name = "RemoveCourseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ders Silme Formu";
+            this.Text = "Course Remove Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 

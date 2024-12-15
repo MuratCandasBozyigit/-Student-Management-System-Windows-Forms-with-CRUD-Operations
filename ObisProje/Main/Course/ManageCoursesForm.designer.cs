@@ -87,9 +87,9 @@
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Description.Location = new System.Drawing.Point(31, 151);
             this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(75, 16);
+            this.Description.Size = new System.Drawing.Size(90, 16);
             this.Description.TabIndex = 38;
-            this.Description.Text = "Açıklama:";
+            this.Description.Text = "Description:";
             // 
             // HoursNumber
             // 
@@ -97,9 +97,9 @@
             this.HoursNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.HoursNumber.Location = new System.Drawing.Point(22, 112);
             this.HoursNumber.Name = "HoursNumber";
-            this.HoursNumber.Size = new System.Drawing.Size(84, 16);
+            this.HoursNumber.Size = new System.Drawing.Size(97, 16);
             this.HoursNumber.TabIndex = 37;
-            this.HoursNumber.Text = "Ders Saati:";
+            this.HoursNumber.Text = "Course Hour:";
             // 
             // LabelAddCourse
             // 
@@ -107,9 +107,9 @@
             this.LabelAddCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelAddCourse.Location = new System.Drawing.Point(35, 75);
             this.LabelAddCourse.Name = "LabelAddCourse";
-            this.LabelAddCourse.Size = new System.Drawing.Size(71, 16);
+            this.LabelAddCourse.Size = new System.Drawing.Size(105, 16);
             this.LabelAddCourse.TabIndex = 36;
-            this.LabelAddCourse.Text = "Ders Adı:";
+            this.LabelAddCourse.Text = "Course Name:";
             this.LabelAddCourse.Click += new System.EventHandler(this.LabelAddCourse_Click);
             // 
             // EditButton
@@ -178,7 +178,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(116, 46);
             this.button4.TabIndex = 48;
-            this.button4.Text = "Ekle";
+            this.button4.Text = "Add";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -192,7 +192,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(116, 46);
             this.button5.TabIndex = 49;
-            this.button5.Text = "Düzenle";
+            this.button5.Text = "Edit";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -206,7 +206,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(116, 46);
             this.button6.TabIndex = 50;
-            this.button6.Text = "Kaldır";
+            this.button6.Text = "Remove";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -227,7 +227,7 @@
             this.TotalCourse.Name = "TotalCourse";
             this.TotalCourse.Size = new System.Drawing.Size(187, 39);
             this.TotalCourse.TabIndex = 52;
-            this.TotalCourse.Text = "Toplam Ders Sayısı:";
+            this.TotalCourse.Text = "Total Course Number:";
             this.TotalCourse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // idText
@@ -266,7 +266,7 @@
             this.MaximizeBox = false;
             this.Name = "ManageCoursesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dersleri yönetme Formu";
+            this.Text = "Manage Courses Form";
             this.Load += new System.EventHandler(this.ManageCoursesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);

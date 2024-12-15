@@ -43,7 +43,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(774, 46);
             this.button4.TabIndex = 49;
-            this.button4.Text = "Yazdır";
+            this.button4.Text = "Print Courses";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

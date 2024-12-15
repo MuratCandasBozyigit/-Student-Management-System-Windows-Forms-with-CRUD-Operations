@@ -51,9 +51,9 @@
             this.IDManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IDManage.Location = new System.Drawing.Point(40, 41);
             this.IDManage.Name = "IDManage";
-            this.IDManage.Size = new System.Drawing.Size(84, 16);
+            this.IDManage.Size = new System.Drawing.Size(82, 16);
             this.IDManage.TabIndex = 50;
-            this.IDManage.Text = "Öğrenci ID:";
+            this.IDManage.Text = "Student ID:";
             // 
             // richTextBox1
             // 
@@ -77,9 +77,9 @@
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Description.Location = new System.Drawing.Point(40, 185);
             this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(75, 16);
+            this.Description.Size = new System.Drawing.Size(86, 16);
             this.Description.TabIndex = 46;
-            this.Description.Text = "Açıklama:";
+            this.Description.Text = "Description";
             // 
             // HoursNumber
             // 
@@ -87,9 +87,9 @@
             this.HoursNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.HoursNumber.Location = new System.Drawing.Point(41, 83);
             this.HoursNumber.Name = "HoursNumber";
-            this.HoursNumber.Size = new System.Drawing.Size(75, 16);
+            this.HoursNumber.Size = new System.Drawing.Size(108, 16);
             this.HoursNumber.TabIndex = 45;
-            this.HoursNumber.Text = "Ders Seç:";
+            this.HoursNumber.Text = "Chose Course:";
             // 
             // AddScoreScore
             // 
@@ -97,9 +97,9 @@
             this.AddScoreScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AddScoreScore.Location = new System.Drawing.Point(81, 148);
             this.AddScoreScore.Name = "AddScoreScore";
-            this.AddScoreScore.Size = new System.Drawing.Size(35, 16);
+            this.AddScoreScore.Size = new System.Drawing.Size(48, 16);
             this.AddScoreScore.TabIndex = 44;
-            this.AddScoreScore.Text = "Not:";
+            this.AddScoreScore.Text = "Score";
             // 
             // AddScore
             // 
@@ -111,7 +111,7 @@
             this.AddScore.Name = "AddScore";
             this.AddScore.Size = new System.Drawing.Size(380, 46);
             this.AddScore.TabIndex = 52;
-            this.AddScore.Text = "Not Ekle";
+            this.AddScore.Text = "Add Score";
             this.AddScore.UseVisualStyleBackColor = false;
             this.AddScore.Click += new System.EventHandler(this.AddScore_Click);
             // 
@@ -170,9 +170,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(70, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 16);
+            this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 59;
-            this.label1.Text = "Sınav";
+            this.label1.Text = "Exam";
             // 
             // AddScoreForm
             // 
@@ -198,7 +198,7 @@
             this.MinimizeBox = false;
             this.Name = "AddScoreForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Not ekleme Formu";
+            this.Text = "Add Score Form";
             this.Load += new System.EventHandler(this.AddScoreForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.studentListData)).EndInit();
             this.ResumeLayout(false);

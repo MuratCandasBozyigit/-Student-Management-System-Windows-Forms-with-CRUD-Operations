@@ -127,9 +127,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(19, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 31);
+            this.label1.Size = new System.Drawing.Size(123, 31);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Dersler";
+            this.label1.Text = "Courses";
             // 
             // label2
             // 
@@ -138,9 +138,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(431, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 31);
+            this.label2.Size = new System.Drawing.Size(105, 31);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Notlar";
+            this.label2.Text = "Scores";
             // 
             // label3
             // 
@@ -149,9 +149,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(828, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 31);
+            this.label3.Size = new System.Drawing.Size(130, 31);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Öğrenciler";
+            this.label3.Text = "Students";
             // 
             // linkLabel1
             // 
@@ -174,7 +174,7 @@
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(1085, 56);
             this.PrintButton.TabIndex = 42;
-            this.PrintButton.Text = "Yazdır";
+            this.PrintButton.Text = "print";
             this.PrintButton.UseVisualStyleBackColor = false;
             this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
@@ -198,7 +198,7 @@
             this.MinimizeBox = false;
             this.Name = "PrintScoresForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Notları Yazdır";
+            this.Text = "print Scores";
             this.Load += new System.EventHandler(this.PrintScoresForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.studentListData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
