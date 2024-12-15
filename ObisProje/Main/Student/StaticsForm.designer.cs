@@ -46,7 +46,7 @@
             this.TotalStudentLabel.Name = "TotalStudentLabel";
             this.TotalStudentLabel.Size = new System.Drawing.Size(297, 89);
             this.TotalStudentLabel.TabIndex = 44;
-            this.TotalStudentLabel.Text = "Toplam Öğrenciler:";
+            this.TotalStudentLabel.Text = "Total Students:";
             this.TotalStudentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TotalStudentLabel.Click += new System.EventHandler(this.TotalStudentLabel_Click);
             this.TotalStudentLabel.MouseLeave += new System.EventHandler(this.TotalStudentLabel_MouseLeave);
@@ -63,7 +63,7 @@
             this.MaleLabel.Name = "MaleLabel";
             this.MaleLabel.Size = new System.Drawing.Size(150, 92);
             this.MaleLabel.TabIndex = 45;
-            this.MaleLabel.Text = "Erkek:";
+            this.MaleLabel.Text = "Male:";
             this.MaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.MaleLabel.MouseLeave += new System.EventHandler(this.MaleLabel_MouseLeave);
             this.MaleLabel.MouseHover += new System.EventHandler(this.MaleLabel_MouseHover);
@@ -79,7 +79,7 @@
             this.FemaleLabel.Name = "FemaleLabel";
             this.FemaleLabel.Size = new System.Drawing.Size(151, 92);
             this.FemaleLabel.TabIndex = 46;
-            this.FemaleLabel.Text = "Kadın:";
+            this.FemaleLabel.Text = "Female:";
             this.FemaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.FemaleLabel.Click += new System.EventHandler(this.FemaleLabel_Click);
             this.FemaleLabel.MouseLeave += new System.EventHandler(this.FemaleLabel_MouseLeave);

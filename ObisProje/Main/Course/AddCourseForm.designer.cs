@@ -44,9 +44,9 @@
             this.LabelAddCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LabelAddCourse.Location = new System.Drawing.Point(60, 22);
             this.LabelAddCourse.Name = "LabelAddCourse";
-            this.LabelAddCourse.Size = new System.Drawing.Size(71, 16);
+            this.LabelAddCourse.Size = new System.Drawing.Size(105, 16);
             this.LabelAddCourse.TabIndex = 0;
-            this.LabelAddCourse.Text = "Ders Adı:";
+            this.LabelAddCourse.Text = "Course Name:";
             this.LabelAddCourse.Click += new System.EventHandler(this.LabelAddCourse_Click);
             // 
             // HoursNumber
@@ -55,9 +55,9 @@
             this.HoursNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.HoursNumber.Location = new System.Drawing.Point(47, 66);
             this.HoursNumber.Name = "HoursNumber";
-            this.HoursNumber.Size = new System.Drawing.Size(84, 16);
+            this.HoursNumber.Size = new System.Drawing.Size(97, 16);
             this.HoursNumber.TabIndex = 1;
-            this.HoursNumber.Text = "Ders Saati:";
+            this.HoursNumber.Text = "Course Hour:";
             // 
             // Description
             // 
@@ -65,9 +65,9 @@
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Description.Location = new System.Drawing.Point(56, 105);
             this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(75, 16);
+            this.Description.Size = new System.Drawing.Size(90, 16);
             this.Description.TabIndex = 2;
-            this.Description.Text = "Açıklama:";
+            this.Description.Text = "Description:";
             // 
             // textLabel
             // 
@@ -102,7 +102,7 @@
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(420, 40);
             this.AddButton.TabIndex = 26;
-            this.AddButton.Text = "Ekle";
+            this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
@@ -124,7 +124,7 @@
             this.MaximizeBox = false;
             this.Name = "AddCourseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ders Ekleme Formu";
+            this.Text = "Add Course Form";
             this.Load += new System.EventHandler(this.AddCourseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hourseNumber)).EndInit();
             this.ResumeLayout(false);

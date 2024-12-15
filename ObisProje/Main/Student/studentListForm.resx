@@ -208,7 +208,7 @@
     <value>8</value>
   </data>
   <data name="RefreshButton.Text" xml:space="preserve">
-    <value>Yenile</value>
+    <value>Refresh</value>
   </data>
   <data name="&gt;&gt;RefreshButton.Name" xml:space="preserve">
     <value>RefreshButton</value>
@@ -241,7 +241,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Öğrenci Listesi Formu</value>
+    <value>Student List Form </value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>studentListForm</value>

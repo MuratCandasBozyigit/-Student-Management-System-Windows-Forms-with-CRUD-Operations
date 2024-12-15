@@ -36,7 +36,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Description = new System.Windows.Forms.Label();
-            this.HoursNumber = new System.Windows.Forms.Label();
             this.AddScoreScore = new System.Windows.Forms.Label();
             this.studentListData = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,6 +45,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.HoursNumber = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.studentListData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +67,7 @@
             this.AddScore.Name = "AddScore";
             this.AddScore.Size = new System.Drawing.Size(118, 46);
             this.AddScore.TabIndex = 62;
-            this.AddScore.Text = "Ekle";
+            this.AddScore.Text = "Add";
             this.AddScore.UseVisualStyleBackColor = false;
             this.AddScore.Click += new System.EventHandler(this.AddScore_Click);
             // 
@@ -77,9 +77,9 @@
             this.IDManage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IDManage.Location = new System.Drawing.Point(29, 17);
             this.IDManage.Name = "IDManage";
-            this.IDManage.Size = new System.Drawing.Size(95, 16);
+            this.IDManage.Size = new System.Drawing.Size(82, 16);
             this.IDManage.TabIndex = 60;
-            this.IDManage.Text = "Çğrenmci ID:";
+            this.IDManage.Text = "Student ID:";
             // 
             // richTextBox1
             // 
@@ -104,20 +104,9 @@
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Description.Location = new System.Drawing.Point(30, 152);
             this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(71, 16);
+            this.Description.Size = new System.Drawing.Size(86, 16);
             this.Description.TabIndex = 57;
-            this.Description.Text = "Açıklama";
-            // 
-            // HoursNumber
-            // 
-            this.HoursNumber.AutoSize = true;
-            this.HoursNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.HoursNumber.Location = new System.Drawing.Point(29, 59);
-            this.HoursNumber.Name = "HoursNumber";
-            this.HoursNumber.Size = new System.Drawing.Size(75, 16);
-            this.HoursNumber.TabIndex = 56;
-            this.HoursNumber.Text = "Ders Seç:";
-            this.HoursNumber.Click += new System.EventHandler(this.HoursNumber_Click);
+            this.Description.Text = "Description";
             // 
             // AddScoreScore
             // 
@@ -125,9 +114,9 @@
             this.AddScoreScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AddScoreScore.Location = new System.Drawing.Point(60, 89);
             this.AddScoreScore.Name = "AddScoreScore";
-            this.AddScoreScore.Size = new System.Drawing.Size(47, 16);
+            this.AddScoreScore.Size = new System.Drawing.Size(64, 16);
             this.AddScoreScore.TabIndex = 55;
-            this.AddScoreScore.Text = "Not 1:";
+            this.AddScoreScore.Text = "Score 1:";
             // 
             // studentListData
             // 
@@ -161,7 +150,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(232, 23);
             this.button1.TabIndex = 66;
-            this.button1.Text = "Öğrenciyi Göster";
+            this.button1.Text = "Show Student";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -171,7 +160,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(232, 23);
             this.button2.TabIndex = 67;
-            this.button2.Text = "Notu Göster";
+            this.button2.Text = "Show Score";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -185,7 +174,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(118, 46);
             this.button3.TabIndex = 68;
-            this.button3.Text = "Kaldır";
+            this.button3.Text = "Remove";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -199,7 +188,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(271, 46);
             this.button4.TabIndex = 69;
-            this.button4.Text = "Dersin ortalama notu";
+            this.button4.Text = "Average Course Score";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -223,10 +212,21 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(60, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 71;
-            this.label1.Text = "Not 2:";
+            this.label1.Text = "Score 2:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // HoursNumber
+            // 
+            this.HoursNumber.AutoSize = true;
+            this.HoursNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.HoursNumber.Location = new System.Drawing.Point(29, 59);
+            this.HoursNumber.Name = "HoursNumber";
+            this.HoursNumber.Size = new System.Drawing.Size(104, 16);
+            this.HoursNumber.TabIndex = 56;
+            this.HoursNumber.Text = "Select Course";
+            this.HoursNumber.Click += new System.EventHandler(this.HoursNumber_Click);
             // 
             // ManageScoresForm
             // 
@@ -255,7 +255,7 @@
             this.MaximizeBox = false;
             this.Name = "ManageScoresForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Notları YÖnet";
+            this.Text = "Manage Scores";
             this.Load += new System.EventHandler(this.ManageScoresForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.studentListData)).EndInit();
             this.ResumeLayout(false);
@@ -271,7 +271,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Description;
-        private System.Windows.Forms.Label HoursNumber;
         private System.Windows.Forms.Label AddScoreScore;
         private System.Windows.Forms.DataGridView studentListData;
         private System.Windows.Forms.Button button1;
@@ -281,5 +280,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label HoursNumber;
     }
 }

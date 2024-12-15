@@ -40,7 +40,6 @@
             this.phoneText = new System.Windows.Forms.TextBox();
             this.textLName = new System.Windows.Forms.TextBox();
             this.textFName = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picturePanel)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -67,21 +67,21 @@
             this.radioButtonFemale.AutoSize = true;
             this.radioButtonFemale.Location = new System.Drawing.Point(115, 5);
             this.radioButtonFemale.Name = "radioButtonFemale";
-            this.radioButtonFemale.Size = new System.Drawing.Size(39, 17);
+            this.radioButtonFemale.Size = new System.Drawing.Size(56, 17);
             this.radioButtonFemale.TabIndex = 2;
-            this.radioButtonFemale.TabStop = true;
-            this.radioButtonFemale.Text = "Kız";
+            this.radioButtonFemale.Text = "female";
             this.radioButtonFemale.UseVisualStyleBackColor = true;
             // 
             // radioButtonMale
             // 
             this.radioButtonMale.AutoSize = true;
+            this.radioButtonMale.Checked = true;
             this.radioButtonMale.Location = new System.Drawing.Point(18, 6);
             this.radioButtonMale.Name = "radioButtonMale";
-            this.radioButtonMale.Size = new System.Drawing.Size(53, 17);
+            this.radioButtonMale.Size = new System.Drawing.Size(47, 17);
             this.radioButtonMale.TabIndex = 1;
             this.radioButtonMale.TabStop = true;
-            this.radioButtonMale.Text = "Erkek";
+            this.radioButtonMale.Text = "male";
             this.radioButtonMale.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -108,7 +108,7 @@
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(127, 40);
             this.AddButton.TabIndex = 8;
-            this.AddButton.Text = "Kayıt Et";
+            this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
@@ -123,7 +123,7 @@
             this.CancelButtonStudent.Name = "CancelButtonStudent";
             this.CancelButtonStudent.Size = new System.Drawing.Size(127, 40);
             this.CancelButtonStudent.TabIndex = 9;
-            this.CancelButtonStudent.Text = "İptal";
+            this.CancelButtonStudent.Text = "Cancel";
             this.CancelButtonStudent.UseVisualStyleBackColor = false;
             this.CancelButtonStudent.Click += new System.EventHandler(this.CancelButtonStudent_Click);
             // 
@@ -133,7 +133,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 23);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Resim Yükle";
+            this.button1.Text = "Upload İmage";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -181,17 +181,6 @@
             this.textFName.Size = new System.Drawing.Size(190, 20);
             this.textFName.TabIndex = 1;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(4, 289);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 16);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Öğrenci Resmi:";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -199,9 +188,10 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(8, 187);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 16);
+            this.label6.Size = new System.Drawing.Size(69, 16);
             this.label6.TabIndex = 23;
-            this.label6.Text = "Adres:";
+            this.label6.Text = "Address:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -210,9 +200,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(0, 160);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 16);
+            this.label5.Size = new System.Drawing.Size(100, 16);
             this.label5.TabIndex = 22;
-            this.label5.Text = "Telefon Numarası:";
+            this.label5.Text = "Phone Number:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
@@ -224,7 +214,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 21;
-            this.label4.Text = "Cinsiyet";
+            this.label4.Text = "Gender:";
             // 
             // label3
             // 
@@ -233,9 +223,10 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(8, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 16);
+            this.label3.Size = new System.Drawing.Size(68, 16);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Doğum Günü:";
+            this.label3.Text = "Birthday:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -244,9 +235,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(8, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.Size = new System.Drawing.Size(72, 16);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Soyisim:";
+            this.label2.Text = "Surname:";
             // 
             // openFileDialog1
             // 
@@ -259,9 +250,20 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(8, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 16);
+            this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 18;
-            this.label1.Text = "İsim:";
+            this.label1.Text = "Name:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(4, 289);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 16);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Student Pİcture:";
             // 
             // AddNewStudent
             // 
@@ -292,7 +294,7 @@
             this.MinimizeBox = false;
             this.Name = "AddNewStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Yeni Öğrenci Ekle";
+            this.Text = "Add New Student";
             this.Load += new System.EventHandler(this.AddNewStudent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturePanel)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -316,7 +318,6 @@
         private System.Windows.Forms.TextBox phoneText;
         private System.Windows.Forms.TextBox textLName;
         private System.Windows.Forms.TextBox textFName;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -324,5 +325,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
     }
 }

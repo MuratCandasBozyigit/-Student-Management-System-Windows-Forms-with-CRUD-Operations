@@ -188,40 +188,40 @@
             // 
             this.addCourseToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
-            this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.addCourseToolStripMenuItem.Text = "Add Course";
             this.addCourseToolStripMenuItem.Click += new System.EventHandler(this.addCourseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(159, 6);
             // 
             // removeCourseToolStripMenuItem
             // 
             this.removeCourseToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.removeCourseToolStripMenuItem.Name = "removeCourseToolStripMenuItem";
-            this.removeCourseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeCourseToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.removeCourseToolStripMenuItem.Text = "Remove Course";
             this.removeCourseToolStripMenuItem.Click += new System.EventHandler(this.removeCourseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem13
             // 
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(159, 6);
             // 
             // manageCoursesToolStripMenuItem
             // 
             this.manageCoursesToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.manageCoursesToolStripMenuItem.Name = "manageCoursesToolStripMenuItem";
-            this.manageCoursesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manageCoursesToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.manageCoursesToolStripMenuItem.Text = "Manage Courses";
             this.manageCoursesToolStripMenuItem.Click += new System.EventHandler(this.manageCoursesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem14
             // 
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(159, 6);
             // 
             // SCOREToolStripMenuItem1
             // 
@@ -235,60 +235,60 @@
             this.avgScoreByCourseToolStripMenuItem,
             this.toolStripMenuItem18});
             this.SCOREToolStripMenuItem1.Name = "SCOREToolStripMenuItem1";
-            this.SCOREToolStripMenuItem1.Size = new System.Drawing.Size(45, 20);
-            this.SCOREToolStripMenuItem1.Text = "Note";
+            this.SCOREToolStripMenuItem1.Size = new System.Drawing.Size(53, 20);
+            this.SCOREToolStripMenuItem1.Text = "Scores";
             // 
             // addScoreToolStripMenuItem
             // 
             this.addScoreToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.addScoreToolStripMenuItem.Name = "addScoreToolStripMenuItem";
-            this.addScoreToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.addScoreToolStripMenuItem.Text = "Add Note";
+            this.addScoreToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.addScoreToolStripMenuItem.Text = "Add Score";
             this.addScoreToolStripMenuItem.Click += new System.EventHandler(this.addScoreToolStripMenuItem_Click);
             // 
             // toolStripMenuItem16
             // 
             this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(185, 6);
+            this.toolStripMenuItem16.Size = new System.Drawing.Size(186, 6);
             // 
             // removeScoreToolStripMenuItem
             // 
             this.removeScoreToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.removeScoreToolStripMenuItem.Name = "removeScoreToolStripMenuItem";
-            this.removeScoreToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.removeScoreToolStripMenuItem.Text = "Remove Note";
+            this.removeScoreToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.removeScoreToolStripMenuItem.Text = "Remove Score";
             this.removeScoreToolStripMenuItem.Click += new System.EventHandler(this.removeScoreToolStripMenuItem_Click);
             // 
             // toolStripMenuItem15
             // 
             this.toolStripMenuItem15.Name = "toolStripMenuItem15";
-            this.toolStripMenuItem15.Size = new System.Drawing.Size(185, 6);
+            this.toolStripMenuItem15.Size = new System.Drawing.Size(186, 6);
             // 
             // manageScoreToolStripMenuItem
             // 
             this.manageScoreToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.manageScoreToolStripMenuItem.Name = "manageScoreToolStripMenuItem";
-            this.manageScoreToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.manageScoreToolStripMenuItem.Text = "Manage Notes";
+            this.manageScoreToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.manageScoreToolStripMenuItem.Text = "Manage Score";
             this.manageScoreToolStripMenuItem.Click += new System.EventHandler(this.manageScoreToolStripMenuItem_Click);
             // 
             // toolStripMenuItem17
             // 
             this.toolStripMenuItem17.Name = "toolStripMenuItem17";
-            this.toolStripMenuItem17.Size = new System.Drawing.Size(185, 6);
+            this.toolStripMenuItem17.Size = new System.Drawing.Size(186, 6);
             // 
             // avgScoreByCourseToolStripMenuItem
             // 
             this.avgScoreByCourseToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.avgScoreByCourseToolStripMenuItem.Name = "avgScoreByCourseToolStripMenuItem";
-            this.avgScoreByCourseToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.avgScoreByCourseToolStripMenuItem.Text = "Average Course Notes";
+            this.avgScoreByCourseToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.avgScoreByCourseToolStripMenuItem.Text = "Average Course Score";
             this.avgScoreByCourseToolStripMenuItem.Click += new System.EventHandler(this.avgScoreByCourseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem18
             // 
             this.toolStripMenuItem18.Name = "toolStripMenuItem18";
-            this.toolStripMenuItem18.Size = new System.Drawing.Size(185, 6);
+            this.toolStripMenuItem18.Size = new System.Drawing.Size(186, 6);
             // 
             // sTUDENTToolStripMenuItem
             // 
@@ -401,7 +401,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "anaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Program Başlangıç";
+            this.Text = "Main Page";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.anaForm_Load);
             this.menuStrip1.ResumeLayout(false);
