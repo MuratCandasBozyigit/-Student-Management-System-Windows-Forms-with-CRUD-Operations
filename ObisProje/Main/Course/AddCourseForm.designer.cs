@@ -42,17 +42,18 @@
             // 
             this.LabelAddCourse.AutoSize = true;
             this.LabelAddCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LabelAddCourse.Location = new System.Drawing.Point(100, 22);
+            this.LabelAddCourse.Location = new System.Drawing.Point(60, 22);
             this.LabelAddCourse.Name = "LabelAddCourse";
             this.LabelAddCourse.Size = new System.Drawing.Size(71, 16);
             this.LabelAddCourse.TabIndex = 0;
             this.LabelAddCourse.Text = "Ders Adı:";
+            this.LabelAddCourse.Click += new System.EventHandler(this.LabelAddCourse_Click);
             // 
             // HoursNumber
             // 
             this.HoursNumber.AutoSize = true;
             this.HoursNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.HoursNumber.Location = new System.Drawing.Point(40, 66);
+            this.HoursNumber.Location = new System.Drawing.Point(47, 66);
             this.HoursNumber.Name = "HoursNumber";
             this.HoursNumber.Size = new System.Drawing.Size(84, 16);
             this.HoursNumber.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             this.Description.AutoSize = true;
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Description.Location = new System.Drawing.Point(60, 105);
+            this.Description.Location = new System.Drawing.Point(56, 105);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(75, 16);
             this.Description.TabIndex = 2;

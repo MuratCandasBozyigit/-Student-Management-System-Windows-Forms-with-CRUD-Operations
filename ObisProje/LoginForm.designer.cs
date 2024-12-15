@@ -53,7 +53,7 @@
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(165, 56);
             this.LoginButton.TabIndex = 3;
-            this.LoginButton.Text = "Giriş Yap";
+            this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = false;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
@@ -80,7 +80,7 @@
             this.accountLogin.Name = "accountLogin";
             this.accountLogin.Size = new System.Drawing.Size(209, 49);
             this.accountLogin.TabIndex = 5;
-            this.accountLogin.Text = "Hesap Girişi";
+            this.accountLogin.Text = "Account Login";
             // 
             // panel1
             // 
@@ -105,22 +105,22 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(49, 118);
+            this.label4.Location = new System.Drawing.Point(29, 119);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 29);
+            this.label4.Size = new System.Drawing.Size(126, 29);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Şifre:";
+            this.label4.Text = "Password:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(8, 89);
+            this.label3.Location = new System.Drawing.Point(25, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 29);
+            this.label3.Size = new System.Drawing.Size(130, 29);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Kullanıcı adı:";
+            this.label3.Text = "Username:";
             // 
             // CancelButtonLogin
             // 
@@ -132,7 +132,7 @@
             this.CancelButtonLogin.Name = "CancelButtonLogin";
             this.CancelButtonLogin.Size = new System.Drawing.Size(163, 56);
             this.CancelButtonLogin.TabIndex = 4;
-            this.CancelButtonLogin.Text = "Vazgeç";
+            this.CancelButtonLogin.Text = "Cancel";
             this.CancelButtonLogin.UseVisualStyleBackColor = false;
             this.CancelButtonLogin.Click += new System.EventHandler(this.CancelButton_Click);
             // 

@@ -63,5 +63,10 @@ namespace ObisProjem.Course
         {
 
         }
+
+        private void LabelAddCourse_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

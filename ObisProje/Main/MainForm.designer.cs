@@ -102,73 +102,73 @@
             this.menageStudentToolStripMenuItem,
             this.toolStripMenuItem10});
             this.STUDENTToolStripMenuItem1.Name = "STUDENTToolStripMenuItem1";
-            this.STUDENTToolStripMenuItem1.Size = new System.Drawing.Size(61, 20);
-            this.STUDENTToolStripMenuItem1.Text = "Öğrenci";
+            this.STUDENTToolStripMenuItem1.Size = new System.Drawing.Size(60, 20);
+            this.STUDENTToolStripMenuItem1.Text = "Student";
             // 
             // addNewStudentsToolStripMenuItem
             // 
             this.addNewStudentsToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.addNewStudentsToolStripMenuItem.Name = "addNewStudentsToolStripMenuItem";
-            this.addNewStudentsToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.addNewStudentsToolStripMenuItem.Text = "Yeni Öğrenci Ekle";
+            this.addNewStudentsToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.addNewStudentsToolStripMenuItem.Text = "Add New Student";
             this.addNewStudentsToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(198, 6);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(189, 6);
             // 
             // studentsListToolStripMenuItem1
             // 
             this.studentsListToolStripMenuItem1.BackColor = System.Drawing.Color.Peru;
             this.studentsListToolStripMenuItem1.Name = "studentsListToolStripMenuItem1";
-            this.studentsListToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
-            this.studentsListToolStripMenuItem1.Text = "Öğrenci Listesi";
+            this.studentsListToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.studentsListToolStripMenuItem1.Text = "Student List";
             this.studentsListToolStripMenuItem1.Click += new System.EventHandler(this.studentsListToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(198, 6);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(189, 6);
             // 
             // staticToolStripMenuItem
             // 
             this.staticToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.staticToolStripMenuItem.Name = "staticToolStripMenuItem";
-            this.staticToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.staticToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.staticToolStripMenuItem.Text = "Statics";
             this.staticToolStripMenuItem.Click += new System.EventHandler(this.staticToolStripMenuItem_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(198, 6);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(189, 6);
             // 
             // editRemoveToolStripMenuItem1
             // 
             this.editRemoveToolStripMenuItem1.BackColor = System.Drawing.Color.Peru;
             this.editRemoveToolStripMenuItem1.Name = "editRemoveToolStripMenuItem1";
-            this.editRemoveToolStripMenuItem1.Size = new System.Drawing.Size(201, 22);
-            this.editRemoveToolStripMenuItem1.Text = "Düzenle/Kaldır";
+            this.editRemoveToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.editRemoveToolStripMenuItem1.Text = "Edit/Remove";
             this.editRemoveToolStripMenuItem1.Click += new System.EventHandler(this.editRemoveToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(198, 6);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(189, 6);
             // 
             // menageStudentToolStripMenuItem
             // 
             this.menageStudentToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.menageStudentToolStripMenuItem.Name = "menageStudentToolStripMenuItem";
-            this.menageStudentToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.menageStudentToolStripMenuItem.Text = "Öğrenci Formunu Yönet";
+            this.menageStudentToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.menageStudentToolStripMenuItem.Text = "Manage Student Form";
             this.menageStudentToolStripMenuItem.Click += new System.EventHandler(this.menageStudentToolStripMenuItem_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(198, 6);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(189, 6);
             // 
             // SOURSEToolStripMenuItem1
             // 
@@ -181,15 +181,15 @@
             this.manageCoursesToolStripMenuItem,
             this.toolStripMenuItem14});
             this.SOURSEToolStripMenuItem1.Name = "SOURSEToolStripMenuItem1";
-            this.SOURSEToolStripMenuItem1.Size = new System.Drawing.Size(55, 20);
-            this.SOURSEToolStripMenuItem1.Text = "Dersler";
+            this.SOURSEToolStripMenuItem1.Size = new System.Drawing.Size(61, 20);
+            this.SOURSEToolStripMenuItem1.Text = "Courses";
             // 
             // addCourseToolStripMenuItem
             // 
             this.addCourseToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
             this.addCourseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addCourseToolStripMenuItem.Text = "Ders Ekle";
+            this.addCourseToolStripMenuItem.Text = "Add Course";
             this.addCourseToolStripMenuItem.Click += new System.EventHandler(this.addCourseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem11
@@ -202,7 +202,7 @@
             this.removeCourseToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.removeCourseToolStripMenuItem.Name = "removeCourseToolStripMenuItem";
             this.removeCourseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.removeCourseToolStripMenuItem.Text = "Ders Kaldır";
+            this.removeCourseToolStripMenuItem.Text = "Remove Course";
             this.removeCourseToolStripMenuItem.Click += new System.EventHandler(this.removeCourseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem13
@@ -215,7 +215,7 @@
             this.manageCoursesToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.manageCoursesToolStripMenuItem.Name = "manageCoursesToolStripMenuItem";
             this.manageCoursesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.manageCoursesToolStripMenuItem.Text = "Dersleri Yönet";
+            this.manageCoursesToolStripMenuItem.Text = "Manage Courses";
             this.manageCoursesToolStripMenuItem.Click += new System.EventHandler(this.manageCoursesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem14
@@ -235,15 +235,15 @@
             this.avgScoreByCourseToolStripMenuItem,
             this.toolStripMenuItem18});
             this.SCOREToolStripMenuItem1.Name = "SCOREToolStripMenuItem1";
-            this.SCOREToolStripMenuItem1.Size = new System.Drawing.Size(59, 20);
-            this.SCOREToolStripMenuItem1.Text = "Puanlar";
+            this.SCOREToolStripMenuItem1.Size = new System.Drawing.Size(45, 20);
+            this.SCOREToolStripMenuItem1.Text = "Note";
             // 
             // addScoreToolStripMenuItem
             // 
             this.addScoreToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.addScoreToolStripMenuItem.Name = "addScoreToolStripMenuItem";
-            this.addScoreToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.addScoreToolStripMenuItem.Text = "Not Ekle";
+            this.addScoreToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.addScoreToolStripMenuItem.Text = "Add Note";
             this.addScoreToolStripMenuItem.Click += new System.EventHandler(this.addScoreToolStripMenuItem_Click);
             // 
             // toolStripMenuItem16
@@ -256,7 +256,7 @@
             this.removeScoreToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.removeScoreToolStripMenuItem.Name = "removeScoreToolStripMenuItem";
             this.removeScoreToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.removeScoreToolStripMenuItem.Text = "Not Kaldır";
+            this.removeScoreToolStripMenuItem.Text = "Remove Note";
             this.removeScoreToolStripMenuItem.Click += new System.EventHandler(this.removeScoreToolStripMenuItem_Click);
             // 
             // toolStripMenuItem15
@@ -268,8 +268,8 @@
             // 
             this.manageScoreToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.manageScoreToolStripMenuItem.Name = "manageScoreToolStripMenuItem";
-            this.manageScoreToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.manageScoreToolStripMenuItem.Text = "Notları yönet";
+            this.manageScoreToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.manageScoreToolStripMenuItem.Text = "Manage Notes";
             this.manageScoreToolStripMenuItem.Click += new System.EventHandler(this.manageScoreToolStripMenuItem_Click);
             // 
             // toolStripMenuItem17
@@ -281,8 +281,8 @@
             // 
             this.avgScoreByCourseToolStripMenuItem.BackColor = System.Drawing.Color.Peru;
             this.avgScoreByCourseToolStripMenuItem.Name = "avgScoreByCourseToolStripMenuItem";
-            this.avgScoreByCourseToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.avgScoreByCourseToolStripMenuItem.Text = "Ortalama Ders Notları";
+            this.avgScoreByCourseToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.avgScoreByCourseToolStripMenuItem.Text = "Average Course Notes";
             this.avgScoreByCourseToolStripMenuItem.Click += new System.EventHandler(this.avgScoreByCourseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem18
@@ -386,9 +386,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(275, 192);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 42);
+            this.label1.Size = new System.Drawing.Size(180, 42);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Hoş Geldiniz";
+            this.label1.Text = "Welcome";
             // 
             // anaForm
             // 
